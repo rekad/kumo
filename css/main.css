@@ -1,0 +1,81 @@
+body {
+    background-color: black;
+    color: rgb(236, 236, 230);
+    font-family: Arial;
+}
+
+a {
+    color: orange;
+}
+
+main {
+    padding: 20px;
+    max-width: 1024px;
+    margin: auto;
+}
+
+nav {
+    max-width: 1024px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+
+nav a {
+    margin: 8px 16px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.42px;
+}
+
+nav a:hover {
+    color: orange;
+}
+
+.logo {
+    width: 96px;
+    height: 96px;
+    margin: 8px;
+    margin-right: 32px;
+}
+
+.container {
+    max-width: 860px;
+    border: 2px solid white;
+    padding: 24px 32px;
+    margin-top: 32px;
+    background-image: url('../img/clouds.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.episode-title {
+    font-size: 24px;
+    line-height: 1.4;
+}
+
+.show-name {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.description {
+    padding-top: 36px;
+    font-size: 16px;
+    line-height: 24px;
+    margin-bottom: 48px;
+}
+
+/*.descr-toggle {
+margin-bottom: 36px;
+font-size: 15px;
+padding: 0px;
+text-decoration: underline;
+background: none;
+border: none;
+color: orange;
+cursor: pointer;
+}*/
