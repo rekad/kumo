@@ -6,8 +6,8 @@ import { NowPlaying } from "./page"
 
 function LivePlayer({stationName}: {stationName: string}) {
     return <div className="mt-8">
-    <iframe src={`https://dashboard.radio4voices.com/public/${stationName}/embed?theme=dark`} frameBorder="0"
-        allowtransparency="true" style={{width: '100%', minHeight: '150px', border: 0}}></iframe>
+    <iframe src={`https://dashboard.radio4voices.com/public/${stationName}/embed?theme=dark`} 
+        style={{width: '100%', minHeight: '150px', border: 0}}></iframe>
     </div>
 }
 
