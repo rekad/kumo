@@ -1,3 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
+
+
+
+/* for now */
+
 body {
     background-color: black;
     color: rgb(236, 236, 230);
@@ -13,6 +45,7 @@ main {
     max-width: 1024px;
     margin: auto;
 }
+
 
 nav {
     max-width: 1024px;
@@ -35,8 +68,6 @@ nav a:hover {
 }
 
 .logo {
-    width: 96px;
-    height: 96px;
     margin: 8px;
     margin-right: 32px;
 }
@@ -46,7 +77,7 @@ nav a:hover {
     border: 2px solid white;
     padding: 24px 32px;
     margin-top: 32px;
-    background-image: url('../img/clouds.jpg');
+    background-image: url('/img/clouds.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -63,13 +94,12 @@ nav a:hover {
 }
 
 .description {
-    padding-top: 36px;
     font-size: 16px;
     line-height: 24px;
-    margin-bottom: 48px;
+    margin-bottom: 12px;
 }
 
-/*.descr-toggle {
+.descr-toggle {
 margin-bottom: 36px;
 font-size: 15px;
 padding: 0px;
@@ -78,4 +108,4 @@ background: none;
 border: none;
 color: orange;
 cursor: pointer;
-}*/
+}
