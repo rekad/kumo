@@ -19,7 +19,8 @@ export default function RootLayout({
       <body>
         <nav>
             <Image className="logo" width={96} height={96} src="/img/logo2.jpg" alt="logo" />
-            <Link href="/">RADIO</Link>
+            <Link href="/">ラジオ</Link>
+            <Link href="/en">RADIO</Link>
             <Link href="/about">ABOUT</Link>
         </nav>
         {children}

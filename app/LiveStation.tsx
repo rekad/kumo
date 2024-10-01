@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import Description from "./Description"
-import { NowPlaying } from "./page"
+import { NowPlaying } from "@/lib/azuracast"
 
 function LivePlayer({stationName}: {stationName: string}) {
     return <div className="mt-8">
@@ -13,12 +13,11 @@ function LivePlayer({stationName}: {stationName: string}) {
 
 export default function LiveStation({nowPlaying}:{ nowPlaying: NowPlaying}) {
     const [nowPlayingState, setNowPlayingState] = useState(nowPlaying)
-    console.log('remaining on render', nowPlayingState.now_playing.remaining)
 
     useEffect(() => {
         const fetchData = async () => {
+            // TODO: use getNowPlayingSingleStation function
             const STATION_NOWPLAYING_API_URL = `https://dashboard.radio4voices.com/api/nowplaying/${nowPlayingState.station.id}`
-            console.log('fetching', STATION_NOWPLAYING_API_URL)
             const res = await fetch(STATION_NOWPLAYING_API_URL)
             const data: NowPlaying = await res.json()
             setNowPlayingState(data)
