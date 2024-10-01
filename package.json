@@ -5,8 +5,11 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start",
+    "start": "next start -p 5000",
     "lint": "next lint"
+  },
+  "engines": {
+    "node": "19.9.0"
   },
   "dependencies": {
     "react": "^18",
