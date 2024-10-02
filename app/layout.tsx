@@ -24,6 +24,7 @@ export default function RootLayout({
             <Link href="/about">ABOUT</Link>
         </nav>
         {children}
+        <footer className="min-h-8"></footer>
       </body>
     </html>
   );

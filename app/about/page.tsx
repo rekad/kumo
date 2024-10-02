@@ -10,6 +10,7 @@ export default function About() {
             A place to encounter voices that are both familiar and unfamiliar.<br /><br />
 
             <a href="https://www.mixcloud.com/KumoRadio/" target="_blank">Listen to the archives | アーカイブを聴く</a>
+            <a href="https://www.instagram.com/radiokumo/" target="_blank">Follow us on Instagram</a>
         </main>
     )
 }
