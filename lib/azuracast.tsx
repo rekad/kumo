@@ -17,7 +17,13 @@ export type NowPlaying= {
             title: string,
             lyrics: string,
             custom_fields: {
+                date_release: string | null,
+                city: string | null,
+                spotify_url: string | null,
+                apple_podcast_url: string | null,
+                soundcloud_url: string | null,
                 donate_url: string | null,
+
             }
         },
         remaining: number,

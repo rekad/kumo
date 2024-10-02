@@ -38,8 +38,8 @@ export default function Description({text} : {text: string}) {
     }
     const text_as_html = formatUrlsAndLineBreaks(text_to_format)
     return (
-        <div>
-            <div className="description" dangerouslySetInnerHTML={{__html: text_as_html}}></div>
+        <div className="description" >
+            <div dangerouslySetInnerHTML={{__html: text_as_html}}></div>
             { text.length > 400 ? <button type="button" className="descr-toggle" onClick={() => setShowingMore(!showingMore)}>
                 { showingMore ? 'Show less' : 'Show more'}
             </button> : null }
